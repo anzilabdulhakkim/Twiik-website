@@ -1,0 +1,526 @@
+@font-face { 
+    font-family:lato;
+    src:url('https://kcdn.twiikapp.comhttps://kcdn.twiikapp.com/css/font/lato-medium.woff2') format('woff2'), url('/css/font/lato-medium.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face { 
+    font-family:lato-bold;
+    src:url('https://kcdn.twiikapp.com/css/font/lato-bold.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+} 
+@font-face { 
+    font-family:lato-light;
+    src:url('https://kcdn.twiikapp.com/css/font/lato-light.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+} 
+html{
+    height: 0px;
+}
+#header {
+      display: flex;
+      justify-content: space-between;
+      position: fixed; 
+      top: 0px; 
+      left: 0px; 
+      width: 100%; 
+      z-index: 1000; 
+      padding: 20px; 
+      box-sizing: border-box;
+      background-color: rgba(40,40,40,0.9); 
+      transition: all 0.2s ease-in-out;
+  } 
+  
+  a {  
+      color: #3bc6db;
+      text-decoration: none;
+  } 
+
+  
+  a:hover {  
+      text-decoration: underline;
+  } 
+  
+  #header .links  {  
+      float: right; 
+      line-height: 40px; 
+      font-size: 16px; 
+      margin-right: 40px; 
+      transition: all 0.2s ease-in-out;
+  }
+
+  #header img  {
+      margin-top: 0px; 
+      height: 40px; 
+      transition: all 0.2s ease-in-out;
+  } 
+  
+  #header .links a  {  
+      display: inline-block; 
+      color: #fff; 
+      padding: 0px 10px; 
+      text-align: center; 
+      transition: all 0.2s ease-in-out; 
+      margin-left: 25px;
+  } 
+  
+  #header .links a:hover {  
+      text-decoration: underline;
+  } 
+  
+  #header .links a.button  {  
+      padding: 10px 25px; 
+      margin-top: -10px; 
+      margin-bottom: -10px; 
+      line-height: 20px; 
+      border-radius: 20px; 
+      background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+  } 
+  
+  #header .links a.button:hover {  
+      text-decoration: none; 
+      box-shadow: 0px 0px 8px rgba(0,0,0,0.75);
+  } 
+  
+  #button{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding: 15px 25px; 
+    border-radius: 40px; 
+    background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+    border: 0;
+  }
+  #button:hover{  
+    text-decoration: none; 
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.75);
+  } 
+ 
+    body {  
+      color:#fff;
+      text-align:center;
+      font-size:12px;
+      background:#fff;
+      font-family:lato, Arial, Helvetica, sans-serif;
+      letter-spacing:0px;
+      margin: 0px 0px 300px; 
+      padding: 0px; 
+      font-family: lato, Arial, Helvetica, sans-serif; 
+      letter-spacing: 0px; 
+      font-size: 12px; 
+      background: #fff;
+      background: #121451;
+    }  
+  
+  html { 
+      position: relative; 
+      min-height: 100%;
+  } 
+  
+  h1 { 
+      margin: -4px 0px 10px 0px; 
+      font-size: 26px; 
+      color: #555; 
+      font-weight: normal;
+  } 
+  
+  h1  { 
+      color: #fff; 
+      text-align: center; 
+      font-size: 15px;
+  } 
+  
+  h1  { 
+      font-size: 60px;
+  } 
+  
+  p { 
+      margin-top: 0px;
+  } 
+  
+  a { 
+      color: #3bc6db;
+  } 
+  
+  a { 
+      text-decoration: none;
+  } 
+  
+  a:hover { 
+      text-decoration: underline;
+  } 
+  
+  h2 { 
+      margin: 0px 0px 10px 0px;
+  } 
+  
+  h2 { 
+      font-size: 18px;
+  } 
+  
+  form { 
+      margin: 0px;
+  } 
+  
+  img { 
+      border: 0px;
+  } 
+  
+  input { 
+      font-family: lato, Arial, sans-serif;
+  } 
+  
+  .codebutton { 
+      border: 0px; 
+      padding: 0px 15px; 
+      line-height: 40px; 
+      font-size: 16px; 
+      border-radius: 5px; 
+      cursor: pointer;
+      background-color: rgb(80, 80, 176);
+      color: white;
+  }
+  .codebutton:hover {
+    background-color: rgb(67, 67, 146);
+  } 
+  
+  
+  /* These were inline style tags. Uses id+class to override almost everything */
+  #style-9DXvd.style-9DXvd {  
+     padding: 0px 0px 50px;  
+  }  
+  #style-pFQMx.style-pFQMx {  
+     background: rgba(255,255,255,0.1);  
+      padding: 25px;  
+      border-radius: 20px;  
+      margin-bottom: 75px;
+      width: 60%;
+      margin: 100px auto;  
+  }  
+  #style-5U59o.style-5U59o {  
+     font-size: 36px;  
+      font-weight: normal;  
+  }  
+  #style-xtJYX.style-xtJYX {  
+     margin: 0px auto;  
+  }  
+  #code.style-9WVY7 {  
+     border: 0px;  
+      padding: 0px 15px;  
+      line-height: 40px;  
+      font-size: 16px;  
+      border-radius: 5px;  
+      width: 300px;  
+      text-align: center;  
+  }  
+  #style-Ipoyr.style-Ipoyr {  
+     margin-bottom: 75px;  
+  }  
+  #style-9FLbH.style-9FLbH {  
+     margin-bottom: 25px;  
+  }  
+  #style-XYYsa.style-XYYsa {  
+     height: 50px;  
+  }  
+  #style-wjE83.style-wjE83 {  
+     height: 50px;  
+  }  
+ 
+
+#registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  #regi-form {
+    margin-top: 10px;
+  }
+  
+  #regi-form p {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .login_input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  
+  .inp-pass {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  
+  #register_button {
+    background-color: rgb(80, 80, 176);
+    border: 1px solid black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 16px;
+  }
+  
+  #register_button:hover {
+    background-color: rgb(67, 67, 146);
+  }
+
+
+
+  
+  
+  #fancybox-content {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: block;
+    display: none;
+    z-index: 3000;
+} 
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000; 
+    display: none;
+}
+
+#fancybox-content #close-btn{
+    margin-left: 90%;
+    background-color: rgb(61, 60, 60);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#popup-link{
+    cursor: pointer;
+}
+
+#fancybox-content form { 
+    margin: 0px;
+} 
+
+#fancybox-content h1 { 
+    margin: -4px 0px 10px 0px; 
+    font-size: 26px; 
+    color: #555; 
+    font-weight: normal;
+} 
+
+#fancybox-content p { 
+    margin-top: 0px;
+} 
+
+#fancybox-content  a { 
+    color: #3bc6db;
+} 
+
+#fancybox-content a { 
+    text-decoration: none;
+} 
+
+#fancybox-content a:hover { 
+    text-decoration: underline;
+} 
+
+#fancybox-content input { 
+    font-family: lato, Arial, sans-serif;
+} 
+
+#fancybox-content .login_input { 
+    border: none; 
+    border-bottom: 1px solid #000; 
+    border-radius: 0px; 
+    padding: 10px 0px; 
+    width: 100%;
+} 
+
+#login_form_button { 
+    background: #3cc6dc; 
+    color: #fff; 
+    border: none; 
+    line-height: 40px; 
+    font-size: 15px; 
+    width: 100%; 
+    outline: none; 
+    border-radius: 10px;
+} 
+
+#fancybox-content .login_facebook { 
+    display: inline-block; 
+    padding: 0px; 
+    font-size: 15px; 
+    color: #fff; 
+    background: #3b5998 url('assets/facebook_icon.png') no-repeat 10px 10px; 
+    border: none; 
+    line-height: 40px; 
+    border-radius: 10px; 
+    width: 100%; 
+    background-image: url("assets/facebook_icon.png"); 
+    background-position-x: 10px; 
+    background-position-y: 10px; 
+    background-color: rgb(59, 89, 152);
+} 
+
+#fancybox-content .login_facebook:hover { 
+    background-color: #293d69; 
+    text-decoration: none;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#login_form.login-form {
+    width: 300px;  
+    background: #fff;  
+    text-align: center;  
+    padding: 10px 50px;  
+    font-size: 13px;  
+}  
+#style-l.style-l {  
+   text-transform: uppercase;  
+    font-size: 28px;  
+    color: #000;  
+    line-height: 42px;  
+}  
+#tab-le.tab-le {
+    color: #000;  
+   margin: 0px auto 25px;  
+}  
+#face-book.face-book {  
+   margin-bottom: 25px;  
+}  
+
+
+
+#footer { 
+    margin: 0px auto; 
+    padding: 50px 0px 50px; 
+    width: 980px; 
+    color: #bbb; 
+    font-size: 12px; 
+    display: table;
+} 
+
+#footer { 
+    border-top: 1px solid rgba(255,255,255,0.25);
+} 
+
+#footer div  { 
+    display: table-cell; 
+    vertical-align: middle;
+} 
+
+#footer div:first-child  {
+    text-align: left; 
+    white-space: nowrap;
+} 
+
+#footer div:last-child  { 
+    text-align: right; 
+    width: 100%;
+} 
+
+p { 
+    margin-top: 0px;
+} 
+
+a { 
+    color: #3bc6db;
+} 
+
+a { 
+    text-decoration: none;
+} 
+
+#footer a  { 
+    color: #fff;
+} 
+
+a:hover { 
+    text-decoration: underline;
+} 
+
+#footer div:last-child a  { 
+    margin: 0px 5px; 
+    filter: alpha(opacity=6); 
+    -moz-opacity: 0.6; 
+    opacity: 0.6;
+} 
+
+#footer div:last-child a:hover { 
+    filter: alpha(opacity=100); 
+    -moz-opacity: 1; 
+    opacity: 1;
+} 
+
+img { 
+    border: 0px;
+} 
+
+#footer div:last-child img  { 
+    height: 50px;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-e9jcc.style-e9jcc {  
+   height: 50px;  
+}  
+#style-F8o9X.style-F8o9X {  
+   margin-bottom: 5px;  
+}  
+#style-d6aiv.style-d6aiv {  
+   margin-bottom: 20px;  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
