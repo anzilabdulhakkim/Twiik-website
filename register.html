@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twiik</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</head>
+<body>
+<div id="overlay"></div>
+
+<div id="header" class="active">
+	<div>
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" /></a>
+    </div>    
+    <div class="links">
+    <a href="gettheapp.html">Get the app</a>
+	<a class="hide_mobile" href="contact.html">Contact</a> 
+	<a href="#" id="popup-link">Login</a>        
+	<a class="button" href="register.html">Create account</a> 
+    </div>
+</div>
+
+
+<div id="fancybox-content">
+	<div><button id="close-btn">x</button></div>
+	  <div id="style-1" class="style-1">
+		<div id="login_form" class="login-form">
+		  <form>
+			<h1 id="style-l" class="style-l">Login</h1>
+			<p><input type="text" name="username" id="username" value="" class="login_input" placeholder="username_or_email"></p>
+			<p id="inp-pass" class="inp-pass"><input type="password" name="password" id="password" value="" class="login_input" placeholder="Password"></p>
+			<table id="tab-le" class="tab-le">
+			  <tbody>
+				<tr>
+				  <td>
+					<input type="checkbox" name="remember" id="remember" value="1" class="checkbox" checked="checked">
+				  </td>
+				  <td>Log in automatically next time</td>
+				</tr>
+			  </tbody>
+			</table>
+			<div id="login_response" ></div>
+			<p><input type="submit" name="commit" value="Login" id="login_form_button"></p>
+			<p style="color: black;">or</p>
+			<p id="face-book" class="face-book">
+			  <a class="login_facebook" href="https://www.facebook.com/dialog/oauth?response_type=code&amp;client_id=26013359906&amp;redirect_uri=https%3A%2F%2Fwww.twiikapp.com%2Fconnect.php%2Fapp%2Ffacebook&amp;state=https%3A%2F%2Fwww.shapelink.com%2Fen%2Fuser%2Ffacebooklogin&amp;scope=email">Login with Facebook</a>
+			</p>
+			<a href="#">Forgotten the password?</a>
+			&nbsp;&nbsp; 
+			<a href="register.html">Create account</a>
+		  </form>
+		</div>
+	  </div>
+	</div>
+	
+<div id="style-pFQMx" class="style-pFQMx" id="regi_table">
+	<div id="registration-form" id="regi">
+		<form id="registration-form">
+			<h1> REGISTRATION </h1>
+			<div id="regi-form">
+			<p><input type="text" name="reg_username" id="reg_username" value="" class="login_input" placeholder="New Username"></p>
+			<p id="reg_inp-pass" class="inp-pass"><input type="password" name="reg_password" id="reg_password" value="" class="login_input" placeholder="New Password"></p>
+			<input type="button" value="Register" id="register_button">
+		    </div>
+		</form>
+	</div>
+</div>
+
+	
+<div class="snipcss-CqMLU style-9DXvd" id="style-9DXvd">
+	<div id="style-pFQMx" class="style-pFQMx">
+	  <h2 id="style-5U59o" class="style-5U59o">Do you have a code for TeamBoost?</h2>
+	  <p>If you have received a code to join a TeamBoost, then you can create your account here on the web, fill in the code below and click "Proceed".</p>
+	  <form method="post" action="register.html">
+		<table id="style-xtJYX" class="style-xtJYX">
+		  <tbody>
+			<tr>
+			  <td>
+				<input type="text" name="code" id="code" value="" placeholder="Enter your code here" class="style-9WVY7">
+			  </td>
+			  <td>
+				<input type="submit" name="commit" value="Proceed" class="codebutton">
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+	  </form>
+	</div>
+	<h1>Create an account in the app!</h1>
+	<p id="style-Ipoyr" class="style-Ipoyr">To be able to use Twiik you need to create an account in the app.</p>
+	<p id="style-9FLbH" class="style-9FLbH"><img src="assets/twiik_register.png" alt="Twiik_register"></p>
+	<p>Get the app</p>
+	<a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8" target="_blank"><img title="Iphone app in App Store" src="assets/appstore_button.png" alt="Appstore_button" id="style-XYYsa" class="style-XYYsa"></a>
+	&nbsp;
+	<a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp" target="_blank"><img title="Android app on Google Play" src="assets/googleplay_button.png" alt="Googleplay_button" id="style-wjE83" class="style-wjE83"></a>
+  </div>
+  
+
+  <div id="footer" class="snipcss-czpVU">
+	<div>
+	  <p><img src="assets/logo.png" alt="Logo" id="style-e9jcc" class="style-e9jcc"></p>
+	  <p id="style-F8o9X" class="style-F8o9X">All rights reserved ©  2002 -  2023</p>
+	  <p id="style-d6aiv" class="style-d6aiv">Developed by Wellnesstech Labs International AB</p>
+	  <a href="">Contact Us</a>
+	  &nbsp;·&nbsp; 
+	  <a href="">Terms &amp; Conditions</a>
+	  <br><br>
+	  <p>created by <u>Anzil Abdulhakkim</u></p>
+	</div>
+	<div>
+	  <a target="_blank" href="https://www.facebook.com/twiikme/"><img src="assets/icon_facebook.png" alt="Icon_facebook"></a>
+	  <a target="_blank" href="https://www.instagram.com/twiik.me/"><img src="assets/icon_instagram.png" alt="Icon_instagram"></a>
+	  <a target="_blank" href="https://www.linkedin.com/company/twiik/"><img src="assets/icon_linkedin.png" alt="Icon_linkedin"></a>
+	  <a target="_blank" href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="assets/icon_apple.png" alt="Icon_apple"></a>
+	  <a target="_blank" href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="assets/icon_android.png" alt="Icon_android">
+	  </a>
+	</div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
+  
