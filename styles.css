@@ -1,0 +1,1127 @@
+@font-face { 
+    font-family:lato;
+    src:url('https://kcdn.twiikapp.comhttps://kcdn.twiikapp.com/css/font/lato-medium.woff2') format('woff2'), url('/css/font/lato-medium.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face { 
+    font-family:lato-bold;
+    src:url('https://kcdn.twiikapp.com/css/font/lato-bold.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+} 
+@font-face { 
+    font-family:lato-light;
+    src:url('https://kcdn.twiikapp.com/css/font/lato-light.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+} 
+
+html{
+    height: 0px;
+}
+body {
+    font-family:lato, Arial, Helvetica, sans-serif;
+    letter-spacing:0px;
+    font-size:12px;
+    background:#fff;
+    margin: 0px 0px 300px; 
+    padding: 0px; 
+    height: auto;
+}  
+#header {
+      position: fixed; 
+      top: 0px; 
+      left: 0px; 
+      width: 100%; 
+      z-index: 1000; 
+      padding: 20px; 
+      box-sizing: border-box; 
+      transition: all 0.2s ease-in-out;
+  }
+  
+  a {  
+      color: #3bc6db;
+      text-decoration: none;
+  } 
+
+  
+  a:hover {  
+      text-decoration: underline;
+  } 
+  
+  #header .links  {  
+      float: right; 
+      line-height: 40px; 
+      font-size: 16px; 
+      margin-right: 40px; 
+      transition: all 0.2s ease-in-out;
+  }
+
+  #header img  { 
+      margin-top: 0px; 
+      height: 40px; 
+      transition: all 0.2s ease-in-out;
+  } 
+  
+  #header .links a  {  
+      display: inline-block; 
+      color: #fff; 
+      padding: 0px 10px; 
+      text-align: center; 
+      transition: all 0.2s ease-in-out; 
+      margin-left: 25px;
+  } 
+  
+  #header .links a:hover {  
+      text-decoration: underline;
+  } 
+  
+  #header .links a.button  {  
+      padding: 10px 25px; 
+      margin-top: -10px; 
+      margin-bottom: -10px; 
+      line-height: 20px; 
+      border-radius: 20px; 
+      background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+  } 
+  
+  #header .links a.button:hover {  
+      text-decoration: none; 
+      box-shadow: 0px 0px 8px rgba(0,0,0,0.75);
+  } 
+  
+  #button{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding: 15px 25px; 
+    border-radius: 40px; 
+    background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+    border: 0;
+  }
+  #button:hover{  
+    text-decoration: none; 
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.75);
+} 
+     
+/* ########################################## LOGIN  ########################################### */
+
+#fancybox-content {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: block;
+    display: none;
+    z-index: 3000;
+} 
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000; 
+    display: none;
+}
+
+#fancybox-content #close-btn{
+    margin-left: 90%;
+    background-color: rgb(61, 60, 60);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#popup-link{
+    cursor: pointer;
+}
+
+#fancybox-content form { 
+    margin: 0px;
+} 
+
+#fancybox-content h1 { 
+    margin: -4px 0px 10px 0px; 
+    font-size: 26px; 
+    color: #555; 
+    font-weight: normal;
+} 
+
+#fancybox-content p { 
+    margin-top: 0px;
+} 
+
+#fancybox-content  a { 
+    color: #3bc6db;
+} 
+
+#fancybox-content a { 
+    text-decoration: none;
+} 
+
+#fancybox-content a:hover { 
+    text-decoration: underline;
+} 
+
+#fancybox-content input { 
+    font-family: lato, Arial, sans-serif;
+} 
+
+#fancybox-content .login_input { 
+    border: none; 
+    border-bottom: 1px solid #000; 
+    border-radius: 0px; 
+    padding: 10px 0px; 
+    width: 100%;
+} 
+
+#login_form_button { 
+    background: #3cc6dc; 
+    color: #fff; 
+    border: none; 
+    line-height: 40px; 
+    font-size: 15px; 
+    width: 100%; 
+    outline: none; 
+    border-radius: 10px;
+} 
+
+#fancybox-content .login_facebook { 
+    display: inline-block; 
+    padding: 0px; 
+    font-size: 15px; 
+    color: #fff; 
+    background: #3b5998 url('assets/icon_facebook.png') no-repeat 10px 10px; 
+    border: none; 
+    line-height: 40px; 
+    border-radius: 10px; 
+    width: 100%; 
+    background-image: url("assets/facebook_icon.png"); 
+    background-position-x: 10px; 
+    background-position-y: 10px; 
+    background-color: rgb(59, 89, 152);
+} 
+
+#fancybox-content .login_facebook:hover { 
+    background-color: #293d69; 
+    text-decoration: none;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#login_form.login-form {  
+   width: 300px;  
+    background: #fff;  
+    text-align: center;  
+    padding: 10px 50px;  
+    font-size: 13px;  
+}  
+#style-l.style-l {  
+   text-transform: uppercase;  
+    font-size: 28px;  
+    color: #000;  
+    line-height: 42px;  
+}  
+#tab-le.tab-le {  
+   margin: 0px auto 25px;  
+}  
+#face-book.face-book {  
+   margin-bottom: 25px;  
+}  
+
+/* ########################################## BLOCK-1  ########################################### */
+
+
+#startpage{ 
+    background: #000 url('assets/startpage.jpg') no-repeat center center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    padding: 75px 0px 50px; 
+    z-index: 1;
+}
+
+.startpage_block {  
+    display: table; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0px auto; 
+    padding: 50px 0px; 
+    position: relative; 
+    box-sizing: border-box; 
+    z-index: 100; 
+    overflow: hidden; 
+    font-size: 16px;
+} 
+.content h1{
+    font-size: 36px; 
+    font-family: lato-bold; 
+    color: #fff;
+}
+.content p{
+    margin-top: -15px;
+    color: white;
+    margin-bottom: 50px; 
+    font-size: 20px; 
+    font-family: lato-light;
+}
+.content input{
+    cursor: pointer;
+}
+
+.content{
+    width: 90%;
+    padding: 0px 50px;
+}
+
+/* ########################################## BLOCK-2  ########################################### */
+
+.startpage_block1{
+    margin:auto; 
+    width: 90%; 
+    display: flex;
+} 
+
+.content1{
+    color: #fff;
+    display: table-cell;
+    margin: auto;
+    width: 36%;
+    box-sizing: border-box;
+}
+.content1 h2{
+    font-family: lato-bold; 
+    color: black;
+    font-size: 26px;
+}
+
+.content1 p{
+    font-size: 16px;
+    color: black;
+    font-family: lato-light;
+    font-weight: 1000;
+}
+
+.image{
+    width: 44%;
+}
+.startpage_block1 .image img {
+    max-width: 100%;
+}
+.startpage_block1 .image img {
+    border: 0px;
+}
+.startpage_block1 .image img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-top: -100px;
+}
+
+/* ########################################## BLOCK-3  ########################################### */
+
+.startpage_block2{
+    margin: auto;
+    width: 90%; 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} 
+
+.startpage_block2~img{
+    max-width: 100%;
+}
+.image1{
+    margin-left: 12%;
+    width: 35%;
+}
+.content2 ul{
+    font-size: 16px;
+    color: black;
+    font-family: lato-light;
+    font-weight: 1000;
+    line-height: 30px;
+}
+
+.content2 h2{
+    font-family: lato-bold; 
+    color: black;
+    font-size: 26px;
+}
+
+.content2{
+    margin: auto ;
+    width: 40%;
+    margin-left: 80px;
+}
+
+.content2 p{
+    font-size: 16px;
+    color: black;
+    font-family: lato-light;
+    font-weight: 1000;
+}
+
+ul li{ 
+    list-style-type: none; 
+    padding: 0px 0px 0px 30px; 
+    background: url('assets/startpage_check.png') no-repeat left top; 
+    background-size: 20px;
+}
+
+ul  { 
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px;
+} 
+
+
+/* ########################################## BLOCK-4  ########################################### */
+
+#clr{
+    background-color: #F7F7FB;
+    padding: 3% 0px;
+}
+
+#clr .startpage_block1{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* ########################################## BLOCK-5  ########################################### */
+
+
+#fourth .image1 img{
+    max-width: 100%;
+}
+
+
+
+.startpage_block { 
+    display: table; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0px auto; 
+    padding: 50px 0px; 
+    position: relative; 
+    box-sizing: border-box; 
+    z-index: 100; 
+    overflow: hidden; 
+    font-size: 16px;
+} 
+
+.content  { 
+    display: table-cell; 
+    margin: 0px auto; 
+    padding: 0px 50px; 
+    vertical-align: middle; 
+    width: 50%; 
+    box-sizing: border-box;
+} 
+
+img { 
+    border: 0px;
+} 
+
+h2 { 
+    margin: 0px 0px 10px 0px;
+} 
+
+h2 { 
+    font-size: 18px;
+} 
+
+.content h2  { 
+    background: url('assets/startpage_h1_bg.jpg') no-repeat left bottom; 
+    padding-bottom: 30px; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    font-size: 24px; 
+    color: #000; 
+    font-family: lato-light; 
+} 
+
+ul.icon_table  { 
+    display: block; 
+    margin: -10px;
+} 
+
+
+ul.icon_table li  { 
+    float: left; 
+    display: table; 
+    width: calc(33.3333% - 20px); 
+    background: none; 
+    padding: 0px; 
+    margin: 10px 10px 30px; 
+    box-sizing: border-box; 
+    font-size: 14px; 
+    min-height: 125px;
+} 
+
+.content h2 span  { 
+    display: block; 
+    margin-bottom: -5px; 
+    font-size: 25px; 
+    font-family: lato-bold;
+} 
+
+ul.icon_table li div  { 
+    display: table-cell; 
+    vertical-align: top;
+} 
+
+ul.icon_table li div:first-child  { 
+    width: 65px;
+} 
+
+ul.icon_table li span.icon  { 
+    display: block; 
+    height: 30px; 
+    width: 30px; 
+    border-radius: 50%; 
+    background-image: linear-gradient(to bottom, #5a3bdb, #75c6ec); 
+    margin: 0px; 
+    padding: 10px;
+} 
+
+ul.icon_table li h3  { 
+    text-transform: uppercase; 
+    margin: 0px 0px 2px; 
+    font-size: 15px;
+} 
+
+ul.icon_table li span.icon img  { 
+    height: 30px; 
+    width: 30px;
+} 
+
+#heading {  
+   margin-bottom: 50px;  
+}  
+
+/* ########################################## GET THE APP(CSS)  ########################################### */
+
+.startpage_block { 
+    display: table; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0px auto; 
+    padding: 50px 0px; 
+    position: relative; 
+    box-sizing: border-box; 
+    z-index: 100; 
+    overflow: hidden; 
+    font-size: 16px;
+} 
+
+.startpage_block .image  { 
+    display: table-cell;
+} 
+
+.startpage_block .image  { 
+    text-align: center;
+} 
+
+.startpage_block .content  { 
+    display: table-cell; 
+    margin: 0px auto; 
+    padding: 0px 50px; 
+    vertical-align: middle; 
+    width: 50%; 
+    box-sizing: border-box;
+} 
+
+img { 
+    border: 0px;
+} 
+
+.startpage_block .image img  { 
+    max-width: 100%;
+} 
+
+h2 { 
+    margin: 0px 0px 10px 0px;
+} 
+
+h2 { 
+    font-size: 18px;
+} 
+
+.startpage_block .content h2  { 
+    background: url('assets/startpage_h1_bg.jpg') no-repeat left bottom; 
+    padding-bottom: 30px; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    font-size: 24px; 
+    color: #000; 
+    font-family: lato-light; 
+    font-weight: normal; 
+    background-image: url("assets/startpage_h1_bg.jpg"); 
+    background-position-x: left; 
+    background-position-y: bottom; 
+} 
+
+p { 
+    margin-top: 0px;
+} 
+
+a { 
+    color: #3bc6db;
+} 
+
+a { 
+    text-decoration: none;
+} 
+
+a:hover { 
+    text-decoration: underline;
+} 
+
+.startpage_block .content h2 span  { 
+    display: block; 
+    margin-bottom: -5px; 
+    font-size: 25px; 
+    font-family: lato-bold;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#block-right.block-right {  
+   overflow: visible;  
+}  
+#mob-image.mob-image {  
+   margin-top: -200px;  
+    max-width: 325px;  
+    z-index: 2;  
+}  
+#m-cont.m-cont {  
+   padding-top: 0px;  
+}  
+#p-cont.p-cont {
+   width: 90%;  
+   margin-bottom: 50px;
+   font-size: 16px;
+   color: black;
+   font-family: lato-light;
+   font-weight: 1000;;  
+}  
+#app-store.app-store {  
+   height: 50px;  
+}  
+#play-store.play-store {  
+   height: 50px;  
+}  
+
+
+
+/* ############################################## FOOTER  ##################################################################################### */
+
+
+#footerbackground{
+    width: 100%;
+    background-color:#121451;
+}
+
+#footer {
+    background-color: #121451;
+    font-size: 12px;
+    margin: 0px auto;
+    width: 100%;
+    color: #bbb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer div {
+    white-space: nowrap; 
+}
+
+#footer div:last-child {
+    text-align: right;
+    width: 100%;
+}
+
+#footer a {
+    text-decoration: none; 
+    color: #fff;
+} 
+  
+a:hover { 
+    text-decoration: underline;
+} 
+  
+#footer div:last-child a { 
+    margin: 0px 5px; 
+    filter: alpha(opacity=6); 
+    -moz-opacity: 0.6; 
+    opacity: 0.6;
+} 
+  
+#footer div:last-child a:hover { 
+    filter: alpha(opacity=100); 
+    -moz-opacity: 1; 
+    opacity: 1;
+} 
+  
+#footer div:last-child img  { 
+    height: 50px;
+}
+
+#footer.style-1 {  
+    width: 100%;  
+    max-width: 1200px;  
+    padding: 50px;
+    padding-top: 80px;  
+    box-sizing: border-box;  
+}  
+#footer_logo.footer_logo {  
+    height: 50px;  
+}
+
+
+@media screen and (min-width: 1024px){
+
+    body {
+        font-family: lato, Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        font-size: 12px;
+        background: #fff;
+        margin: 0px 0px 300px;
+        padding: 0px;
+        height: auto;
+    }
+
+    #header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 1000;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a {
+        color: #3bc6db;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    #header .links {
+        float: right;
+        line-height: 40px;
+        font-size: 16px;
+        margin-right: 40px;
+    }
+
+    #header img {
+        margin-top: 0px;
+        height: 40px;
+        transition: all 0.2s ease-inout;
+    }
+
+    #header .links a {
+        display: inline-block;
+        color: #fff;
+        padding: 0px 10px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        margin-left: 25px;
+    }
+
+    #header .links a:hover {
+        text-decoration: underline;
+    }
+
+    #header .links a.button {
+        padding: 10px 25px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        line-height: 20px;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+    }
+
+    #header .links a.button:hover {
+        text-decoration: none;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+    }
+
+    #button {
+        color: white;
+        font-weight: 500;
+        font-size: large;
+        padding: 15px 25px;
+        border-radius: 40px;
+        background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+        border: 0;
+    }
+
+    #button:hover {
+        text-decoration: none;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #header {
+        padding: 15px;
+    }
+
+    #startpage {
+        padding: 50px 0px;
+    }
+
+    .startpage_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .content p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .content1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content1 h2 {
+        font-size: 24px;
+    }
+
+    .content1 p {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .startpage_block1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .image1 {
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .content2 {
+        width: 50%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+    .content2 ul {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .content2 h2 {
+        font-size: 26px;
+    }
+
+    .content2 p {
+        font-size: 16px;
+    }
+
+    ul li {
+        list-style-type: none;
+        padding-left: 30px;
+        background: url('assets/startpage_check.png') no-repeat left top;
+        background-size: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #clr {
+        padding: 3% 0px;
+    }
+
+    #clr .startpage_block1 {
+        width: 100%;
+    }
+
+    .startpage_block .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content h2 span {
+        display: block;
+        font-size: 25px;
+    }
+    
+    .icon_table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .icon_table li {
+        width: calc(50% - 20px);
+        background: none;
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        min-height: 125px;
+        text-align: center;
+    }
+
+    .icon_table li div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon_table li div:first-child {
+        width: 65px;
+    }
+
+    .icon_table li span.icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, #5a3bdb, #75c6ec);
+        margin: 0;
+        padding: 10px;
+    }
+
+    .icon_table li h3 {
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    .icon_table li span.icon img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #header {
+        padding: 10px;
+    }
+
+    #startpage {
+        padding: 20px 0px;
+    }
+
+    .startpage_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .content1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content1 h2 {
+        font-size: 20px;
+    }
+
+    .content1 p {
+        font-size: 14px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .startpage_block1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .image1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content2 {
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .content2 ul {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .content2 h2 {
+        font-size: 20px;
+    }
+
+    .content2 p {
+        font-size: 14px;
+    }
+
+    ul li {
+        list-style-type: none;
+        padding-left: 30px;
+        background: url('assets/startpage_check.png') no-repeat left top;
+        background-size: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #clr {
+        padding: 5% 0;
+    }
+
+    #clr .startpage_block1 {
+        width: 100%;
+    }
+
+    .startpage_block .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h2 span {
+        display: block;
+        font-size: 22px;
+    }
+
+    .icon_table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon_table li {
+        width: calc(100% - 20px);
+        background: none;
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        min-height: 125px;
+        text-align: center;
+    }
+
+    .icon_table li div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon_table li:first-child {
+        width: 80px;
+    }
+
+    .icon_table li span.icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, #5a3bdb, #75c6ec);
+        margin: 0;
+        padding: 10px;
+    }
+
+    .icon_table li h3 {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .icon_table li span.icon img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+
+
