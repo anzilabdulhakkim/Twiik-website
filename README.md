@@ -20,7 +20,7 @@ This project is a replication of the Twiik health and fitness platform, created 
 
 To set up and run the Twiik website clone, follow these steps:
 
-1. **Clone the Repository**: `git clone [https://github.com/your-username/twiik-clone.git](https://github.com/anzilabdulhakkim/Twiik-website.git)`
+1. **Clone the Repository**: `git clone https://github.com/anzilabdulhakkim/Twiik-website.git
 2. **Navigate to the Project Directory**: `cd twiik-clone`
 3. **Install Dependencies**: `npm install`
 4. **Run the Application**: `npm start`
